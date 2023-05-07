@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新米エンジニアの備忘録</title>
+    <link>https://nykttocggv.github.io/</link>
+    <description>Recent content on 新米エンジニアの備忘録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 07 May 2023 13:14:21 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://nykttocggv.github.io/post/my-first-post/</link>
+      <pubDate>Sun, 07 May 2023 13:14:21 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/my-first-post/</guid>
+      <description>Hello, hugo! hugoむずかし。</description>
+    </item>
+    
+  </channel>
+</rss>
