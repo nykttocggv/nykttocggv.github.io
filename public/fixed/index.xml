@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fixeds on 新米エンジニアの備忘録</title>
+    <link>https://nykttocggv.github.io/fixed/</link>
+    <description>Recent content in Fixeds on 新米エンジニアの備忘録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 08 May 2023 22:00:44 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>お問い合わせフォーム</title>
+      <link>https://nykttocggv.github.io/fixed/contact/</link>
+      <pubDate>Mon, 08 May 2023 22:00:44 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/fixed/contact/</guid>
+      <description>何かお問い合わせされることがありましたら、以下のGoogleフォームでお問い合わせください。 ↓↓↓↓↓↓ お問い合わせフォーム（Googleフ</description>
+    </item>
+    
+    <item>
+      <title>プライバシーポリシー及び免責事項について</title>
+      <link>https://nykttocggv.github.io/fixed/privacy-policy/</link>
+      <pubDate>Sat, 06 May 2023 22:53:46 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/fixed/privacy-policy/</guid>
+      <description>個人情報の利用目的 chuyaが運営する「新米エンジニアの備忘録（以下、当ブログと表記）」では、お問い合わせや記事へのコメントを送信いただく際</description>
+    </item>
+    
+  </channel>
+</rss>
