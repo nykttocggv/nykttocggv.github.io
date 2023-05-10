@@ -5,13 +5,22 @@
     <link>https://nykttocggv.github.io/</link>
     <description>Recent content on 新米エンジニアの備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 08 May 2023 22:02:16 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 May 2023 22:03:26 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【基本情報】自然言語から曖昧さをなくした「形式言語」とは？解説します</title>
+      <link>https://nykttocggv.github.io/post/2023/05/10/bnf/</link>
+      <pubDate>Wed, 10 May 2023 22:03:26 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/05/10/bnf/</guid>
+      <description>普段私たちが使っている言語というのは、コンピュータからするととても曖昧で、情報として扱うには少し大雑把すぎる、という特徴があります。 例えば、</description>
+    </item>
+    
     <item>
       <title>初めてのHugo &#43; Github Pages</title>
-      <link>https://nykttocggv.github.io/post/20230508--my-first-hugo/</link>
+      <link>https://nykttocggv.github.io/post/2023/05/08/my-first-hugo/</link>
       <pubDate>Mon, 08 May 2023 22:02:16 +0900</pubDate>
       
-      <guid>https://nykttocggv.github.io/post/20230508--my-first-hugo/</guid>
+      <guid>https://nykttocggv.github.io/post/2023/05/08/my-first-hugo/</guid>
       <description>ここまで来るのに2日かかったんですけど。 アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと</description>
     </item>
     
