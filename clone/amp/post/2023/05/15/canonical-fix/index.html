@@ -13,6 +13,7 @@
 
 
 
+
 <link rel="canonical" href="https://nykttocggv.github.io/amp/post/2023/05/15/canonical-fix/">
 
 
@@ -699,7 +700,7 @@ section.footer {
   <ul>
     <li><a href="#エラーの概要">エラーの概要</a></li>
     <li><a href="#対応策">対応策</a></li>
-    <li><a href="#結果">結果</a></li>
+    <li><a href="#まとめ--参考文献">まとめ &amp; 参考文献</a></li>
   </ul>
 </nav>
   </div>
@@ -712,8 +713,26 @@ section.footer {
 <h2 id="エラーの概要">エラーの概要</h2>
 <p>今回出たエラーはこんな感じ。</p>
 <p><img src="/images/202305/canonical-fix_thumb.png" alt="Google Search Consoleにおいて発生したエラー"></p>
+<p>Googleの検索結果にサイトが掲載される際に、似たようなページがあると、「どっちを表示すりゃいいの？」とGoogleが迷ってしまうケースがあるそう。</p>
+<p>例えば、<strong>AMPページを作成した場合。</strong></p>
+<p>AMPページと通常ページでは、記述されている内容は全く変わらないけれど、デザインやURLは違います。この時、検索結果に表示されるべきなのは通常ページです（利用ブラウザがAMPに対応していないケースもあるので）。</p>
+<p>そこで、Google側に通常ページを明示しないとエラーが発生するみたいですね。</p>
 <h2 id="対応策">対応策</h2>
-<h2 id="結果">結果</h2>
+<p>そこで、以下のようなコードを<code>layout/partials/meta.html</code>の任意の部分に以下のコードを挿入しました。</p>
+<pre tabindex="0"><code>{{ if .Params.canonicalUrl }}
+&lt;link rel=&#34;canonical&#34; href=&#34;{{ .Params.canonicalUrl }}&#34;&gt;
+{{ else }}
+&lt;link rel=&#34;canonical&#34; href=&#34;{{ .Permalink }}&#34;&gt;
+{{ end }}
+</code></pre><p>これを挿入してあげると、<code>canonical</code>なURLが各ページの<code>&lt;head&gt;</code>要素に追加されているのがわかると思います。</p>
+<p><img src="/images/202305/canonical-fix_1.png" alt=""></p>
+<p><code>&lt;link rel=&quot;canonical&quot; href=...&gt;</code>の&hellip;の部分が、現在アクセスしているURLとなっています。</p>
+<h2 id="まとめ--参考文献">まとめ &amp; 参考文献</h2>
+<p>canonical属性を付与する方法を紹介しました。</p>
+<p>参考にしたサイトはこちらです↓</p>
+<iframe class="hatenablogcard" style="width:100%;height:150px; max-width:600px;" src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fcconcannon.medium.com%2fadding-an-external-canonical-url-to-a-hugo-template-3b6e18814649" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+<p>参考になれば嬉しいです。</p>
+<p>以上！</p>
 </div>
 
   <footer class="article-footer">
