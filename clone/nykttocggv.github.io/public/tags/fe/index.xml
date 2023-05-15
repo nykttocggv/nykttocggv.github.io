@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fe on 新米エンジニアの備忘録</title>
+    <link>https://nykttocggv.github.io/tags/fe/</link>
+    <description>Recent content in fe on 新米エンジニアの備忘録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 12 May 2023 22:25:09 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/fe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【基本情報】RAMの種類ってたくさんある。</title>
+      <link>https://nykttocggv.github.io/post/2023/05/12/about-ram/</link>
+      <pubDate>Fri, 12 May 2023 22:25:09 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/05/12/about-ram/</guid>
+      <description>コンピュータのパーツの１つに主記憶装置のRAMがあります。CPUの演算処理結果を一時的に保管したり、プログラムをここにアサインしておくといっ</description>
+    </item>
+    
+    <item>
+      <title>【基本情報】AIについて</title>
+      <link>https://nykttocggv.github.io/post/2023/05/11/about-ai/</link>
+      <pubDate>Thu, 11 May 2023 21:31:15 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/05/11/about-ai/</guid>
+      <description>ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこ</description>
+    </item>
+    
+    <item>
+      <title>【基本情報】形式言語について</title>
+      <link>https://nykttocggv.github.io/post/2023/05/10/bnf/</link>
+      <pubDate>Wed, 10 May 2023 22:03:26 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/05/10/bnf/</guid>
+      <description>普段私たちが使っている言語というのは、コンピュータからするととても曖昧で、情報として扱うには少し大雑把すぎる、という特徴があります。 例えば、</description>
+    </item>
+    
+  </channel>
+</rss>
