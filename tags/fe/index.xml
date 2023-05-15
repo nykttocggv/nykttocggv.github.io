@@ -5,7 +5,16 @@
     <link>https://nykttocggv.github.io/tags/fe/</link>
     <description>Recent content in fe on 新米エンジニアの備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 May 2023 22:25:09 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/fe/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 23:46:47 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/fe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【基本情報】クライアントサーバシステムとは</title>
+      <link>https://nykttocggv.github.io/post/2023/05/14/about-css/</link>
+      <pubDate>Sun, 14 May 2023 23:46:47 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/05/14/about-css/</guid>
+      <description>私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、そ</description>
+    </item>
+    
     <item>
       <title>【基本情報】RAMの種類ってたくさんある。</title>
       <link>https://nykttocggv.github.io/post/2023/05/12/about-ram/</link>
