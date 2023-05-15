@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>【基本情報】クライアントサーバシステムとは - 新米エンジニアの備忘録</title>
+    <title>【基本情報】プログラム割込みについて - 新米エンジニアの備忘録</title>
     <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com"  crossorigin>
@@ -17,27 +17,27 @@
 <link rel="apple-touch-icon" href="https://nykttocggv.github.io/images/logo.png">
 
 
-<link rel="canonical" type="text/html" href="https://nykttocggv.github.io/post/2023/05/14/about-css/" title="新米エンジニアの備忘録">
+<link rel="canonical" type="text/html" href="https://nykttocggv.github.io/post/2023/05/15/prog-interrupt/" title="新米エンジニアの備忘録">
 
 
 
     
-<meta name="description" content="私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、その形態が大まかに２つに分かれてきます。">
+<meta name="description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
 
-<meta property="og:title" content="【基本情報】クライアントサーバシステムとは - 新米エンジニアの備忘録">
+<meta property="og:title" content="【基本情報】プログラム割込みについて - 新米エンジニアの備忘録">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://nykttocggv.github.io/amp/post/2023/05/14/about-css/">
-<meta property="og:image" content="https://nykttocggv.github.io/images/default.png">
+<meta property="og:url" content="https://nykttocggv.github.io/amp/post/2023/05/15/prog-interrupt/">
+<meta property="og:image" content="https://nykttocggv.github.io/images/202305/prog-interrupt_thumb.jpg">
 <meta property="og:site_name" content="新米エンジニアの備忘録">
-<meta property="og:description" content="私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、その形態が大まかに２つに分かれてきます。">
+<meta property="og:description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="新米エンジニアの備忘録">
-<meta name="twitter:url" content="https://nykttocggv.github.io/amp/post/2023/05/14/about-css/">
-<meta name="twitter:title" content="【基本情報】クライアントサーバシステムとは - 新米エンジニアの備忘録">
-<meta name="twitter:description" content="私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、その形態が大まかに２つに分かれてきます。">
-<meta name="twitter:image" content="https://nykttocggv.github.io/images/default.png">
+<meta name="twitter:url" content="https://nykttocggv.github.io/amp/post/2023/05/15/prog-interrupt/">
+<meta name="twitter:title" content="【基本情報】プログラム割込みについて - 新米エンジニアの備忘録">
+<meta name="twitter:description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
+<meta name="twitter:image" content="https://nykttocggv.github.io/images/202305/prog-interrupt_thumb.jpg">
 
 
 <script type="application/ld+json">
@@ -48,15 +48,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/nykttocggv.github.io\/"
     },
-    "headline": "【基本情報】クライアントサーバシステムとは-新米エンジニアの備忘録",
+    "headline": "【基本情報】プログラム割込みについて-新米エンジニアの備忘録",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/nykttocggv.github.io\/images\/default.png",
+      "url": "https:\/\/nykttocggv.github.io\/images\/202305\/prog-interrupt_thumb.jpg",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2023-05-14T23:46:47JST",
-    "dateModified": "2023-05-14T23:46:47JST",
+    "datePublished": "2023-05-15T15:44:17JST",
+    "dateModified": "2023-05-15T15:44:17JST",
     "author": {
       "@type": "Person",
       "name": "新米エンジニアの備忘録"
@@ -71,7 +71,7 @@
         "height": 60
       }
     },
-    "description": "私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、その形態が大まかに２つに分かれてきます。"
+    "description": "試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。"
   }
 </script>
 
@@ -655,13 +655,13 @@ section.footer {
         
 <article class="sn">
 
-  <div class="thumb thumb-cd6926f43cb9a2f9e1f541018d7b6ed7"></div>
+  <div class="thumb thumb-16b6b80c83f5f1e8bba39526012fc720"></div>
 
   <header class="article-header">
-    <h1 class="title">【基本情報】クライアントサーバシステムとは</h1>
+    <h1 class="title">【基本情報】プログラム割込みについて</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-14T23:46:47JST">2023-05-14</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-15T15:44:17JST">2023-05-15</time></li>
       
       
       <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://nykttocggv.github.io/post/">POST</a></li>
@@ -671,66 +671,97 @@ section.footer {
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
 
   
 
-  <div class="article-body"><p>私たちが普段利用しているインターネットやコンピュータシステムでは、常に膨大なデータを処理し続けています。システムがデータを処理するときに、その形態が大まかに２つに分かれてきます。</p>
+  <div class="article-body"><p>試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。</p>
+<p>今回はその「プログラム割込み」について解説していきたいと思います。</p>
+<p>僕も現在基本情報技術者試験の勉強中で、この分野にはかなり頭を悩まされたので、共有します。</p>
+<p>これを見れば、</p>
 <ul>
-<li>集中処理 -&gt; データや情報を１箇所にまとめて一括で処理</li>
-<li>分散処理 -&gt; 役割を複数のコンピュータごとに決めて効率よく処理すること</li>
+<li>プログラム割込みが何なのかを知る</li>
+<li>外部割込みと内部割込みの分類の仕方を覚える</li>
 </ul>
-<p>これらのうち、今回は分散処理について触れていきます。基本情報でも出題例がそれなりにあるので要チェックです。</p>
-<h2 id="分散処理とは何か">分散処理とは何か。</h2>
-<h3 id="概要">概要</h3>
-<p>分散処理というのは、複数のコンピュータを同一ネットワークで接続して、データなどの資源を共有することで効率よくデータを処理することができる処理方法です。</p>
-<p>具体的には、ロードシェアリングシステム(同じ処理を分担することで負荷を分散)や、後述するクライアントサーバシステムがこれに当たります。</p>
-<h3 id="集中処理と比べた時の長所や短所">集中処理と比べた時の長所や短所</h3>
-<p>分散処理のメリットは、</p>
+<p>これらができるようになります。最後までぜひみていってください。</p>
+<h2 id="プログラム割込みとは">プログラム割込みとは</h2>
+<p>そもそもプログラム割込みというのは、</p>
+<p><strong>あるプログラムを実行中に別のプログラムに切り替えること</strong></p>
+<p>です。（かなり大雑把ですが）</p>
+<p>詳しくは以下の図と一緒に説明していきます。</p>
+<p><img src="/images/202305/prog-interrupt_1.png" alt="プログラム割込みの手順"></p>
+<p>あるプログラムを実行中、何かしらの原因で割込みが発生します。</p>
+<p>その際に実行していたプログラムは中断され、中断した時の状態が主記憶に保存されます。</p>
+<p>その後、割込みの種類を判別してから処理ルーチンを起動し、処理をします。</p>
+<p>処理が完了したら先ほど実行していたプログラムを再び呼び出し、処理が再開されます。</p>
+<p>複数のプログラムが同時に実行されるような<strong>多重プログラミング</strong> では、欠かせない重要な機能となっています。</p>
+<h2 id="プログラム割込みには2種類ある">プログラム割込みには「2種類」ある</h2>
+<p>プログラム割込みには</p>
 <ul>
-<li>障害発生時のリスクが分散されることで「信頼性」が向上する</li>
-<li>複数のコンピュータで運用するので昨日の拡張などが容易である</li>
+<li>内部割込み</li>
+<li>外部割込み</li>
 </ul>
-<p>と言ったメリットがあります。一方、デメリットとしては</p>
+<p>の2種類あります。それぞれ説明していきます。</p>
+<h3 id="1-内部割込み">1. 内部割込み</h3>
+<p>内部割込みは、<strong>実行中のプログラムに起因</strong> する割込みです。</p>
+<p>具体例としては以下のようになっています。</p>
 <ul>
-<li>複数のコンピュータで構成されているため、障害原因がわかりづらい</li>
-<li>セキュリティが不十分になりやすい</li>
+<li>プログラム割込み
+<ul>
+<li>オーバーフロー・アンダーフロー</li>
+<li>ゼロ除算</li>
+<li>パリティエラー</li>
 </ul>
-<p>などが挙げられます。</p>
-<h2 id="クライアントサーバシステムとは">クライアントサーバシステムとは</h2>
-<p>分散処理の代表例である「クライアントサーバシステム」とは、３層に分かれた処理層を利用して、役割を分担する手法です。
-クライアントとサーバで構成される2層アーキテクチャの間に１層追加することで完成します。</p>
-<p><img src="/images/202305/about-css_thumb.png" alt="クライアントサーバシステム(3層アーキテクチャ)"></p>
-<p>身の回りのクライアントサーバシステムといえば、<strong>WebブラウザとWebサーバ</strong> が当てはまります。</p>
-<p>流れとしては、</p>
-<ol>
-<li>ユーザがWebブラウザを操作してリンクにクリック</li>
-<li>WebブラウザからWebサーバにページリクエストを送信</li>
-<li>リクエストを受け取ったサーバはレンダリングを行い、Webページデータをブラウザにレスポンスする</li>
-<li>レスポンスを受け取ったWebブラウザがUI上にWebページを表示</li>
-<li>ユーザはリンク先のWebページにアクセスできる</li>
-</ol>
-<p>という流れです。</p>
-<p>それぞれが役割を分担することで負担分散が実現されています。</p>
-<p>こんにちのインターネットでは欠かせない処理体系です。</p>
+</li>
+<li>SVC(スーパーバイザーコール)割込み
+<ul>
+<li>処理プログラムから監視プログラムに対して<strong>入出力要求やプログラムの完了</strong> を伝えるとき</li>
+</ul>
+</li>
+</ul>
+<p>どれも、ユーザ側からコンピュータに何かアクションすることなく、<strong>プログラム自体が自分で割込みを発生している状態</strong> です。</p>
+<p>この言葉がわからなくても大丈夫です。次に説明する「内部割込み」を理解できると、違いがよくわかります。</p>
+<h3 id="2-外部割込み">2. 外部割込み</h3>
+<p>外部割り込みは、<strong>コンピュータシステム外から</strong>の割込みを指します。</p>
+<p>具体的には、以下のようになっています。</p>
+<ul>
+<li>入出力割込み &hellip; ユーザ側からデータの入力が完了した時や状態が変化した時</li>
+<li>機械チェック割込み &hellip; CPUの誤動作や装置の異常など</li>
+<li>タイマ割込み &hellip; CPUの使用時間がオーバーした時</li>
+<li>コンソール割込み &hellip; オペレータからの介入(コマンドライン上におけるCtrl+Cなど)</li>
+</ul>
+<h3 id="分類の仕方">分類の仕方</h3>
+<p>ここまで割り込みごとの説明をしていきましたが、明確な分け方があります。</p>
+<p>それは、<strong>プログラムが実行していても該当するかどうか</strong> です。(わかりづらいですよね)</p>
+<p>というのは、例えば、</p>
+<blockquote>
+<p>内部割込みは、実行プログラムが引き起こす特有の割込み</p>
+<p>それに対して外部割込みは、どのプログラムにでも起こりうる、共通の割込み</p>
+</blockquote>
+<p>といえます。</p>
+<p>外部割込みは「コンピュータシステム外からの割込み」なので、プログラムがどうであれ起こりうる割込みです。</p>
+<p>外部割込みから考えるとわかりやすいかもしれませんね。</p>
+<h2 id="プログラム割込みを制する者は基本情報を制する">プログラム割込みを制する者は基本情報を制する。</h2>
+<p>というのは流石に言い過ぎかもしれませんがそれくらい重要です。</p>
+<p>反復学習必須ですね。</p>
 <p>以上！</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%82%af%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%82%b5%e3%83%bc%e3%83%90%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%a8%e3%81%af" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f14%2fabout-css%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -760,40 +791,19 @@ section.footer {
     <div class="mcol c6">
       <header>Next Article</header>
     
-      <article class="lism">
-  <a href="https://nykttocggv.github.io/amp/post/2023/05/15/prog-interrupt/">
-    <div class="thumb thumb-16b6b80c83f5f1e8bba39526012fc720"></div>
-
-    <div class="inner">
-      <div class="title">【基本情報】プログラム割込みについて</div>
-
-      <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="15007-05-15T15:44:17JST">2023-05-15</time></li>
-        
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-        
-        
-      </ul>
-
-    </div>
-  </a>
-</article>
-
-    
     </div>
     <div class="mcol c6">
       <header>Previous Article</header>
     
       <article class="lism">
-  <a href="https://nykttocggv.github.io/amp/post/2023/05/14/linemo-4months-review/">
-    <div class="thumb thumb-85fcf5e939b0d33bb4d38b5854a4036e"></div>
+  <a href="https://nykttocggv.github.io/amp/post/2023/05/14/about-css/">
+    <div class="thumb thumb-cd6926f43cb9a2f9e1f541018d7b6ed7"></div>
 
     <div class="inner">
-      <div class="title">LINEMOを４ヶ月使ってみた感想。</div>
+      <div class="title">【基本情報】クライアントサーバシステムとは</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="14007-05-14T14:58:51JST">2023-05-14</time></li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="14007-05-14T23:46:47JST">2023-05-14</time></li>
         
         <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         

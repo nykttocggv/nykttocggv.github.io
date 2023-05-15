@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>【基本情報】AIについて - 新米エンジニアの備忘録</title>
+    <title>【基本情報】プログラム割込みについて - 新米エンジニアの備忘録</title>
     <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com"  crossorigin>
@@ -16,27 +16,27 @@
 <link rel="apple-touch-icon" href="https://nykttocggv.github.io/images/logo.png">
 
 
-<link rel="amphtml" type="text/html" href="https://nykttocggv.github.io/amp/post/2023/05/11/about-ai/" title="新米エンジニアの備忘録">
+<link rel="amphtml" type="text/html" href="https://nykttocggv.github.io/amp/post/2023/05/15/prog-interrupt/" title="新米エンジニアの備忘録">
 
 
 
     
-<meta name="description" content="ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこのAIとは何なのでしょうか。">
+<meta name="description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
 
-<meta property="og:title" content="【基本情報】AIについて - 新米エンジニアの備忘録">
+<meta property="og:title" content="【基本情報】プログラム割込みについて - 新米エンジニアの備忘録">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://nykttocggv.github.io/post/2023/05/11/about-ai/">
-<meta property="og:image" content="https://nykttocggv.github.io/images/202305/aboutAi_thumb.jpg">
+<meta property="og:url" content="https://nykttocggv.github.io/post/2023/05/15/prog-interrupt/">
+<meta property="og:image" content="https://nykttocggv.github.io/images/202305/prog-interrupt_thumb.jpg">
 <meta property="og:site_name" content="新米エンジニアの備忘録">
-<meta property="og:description" content="ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこのAIとは何なのでしょうか。">
+<meta property="og:description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="新米エンジニアの備忘録">
-<meta name="twitter:url" content="https://nykttocggv.github.io/post/2023/05/11/about-ai/">
-<meta name="twitter:title" content="【基本情報】AIについて - 新米エンジニアの備忘録">
-<meta name="twitter:description" content="ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこのAIとは何なのでしょうか。">
-<meta name="twitter:image" content="https://nykttocggv.github.io/images/202305/aboutAi_thumb.jpg">
+<meta name="twitter:url" content="https://nykttocggv.github.io/post/2023/05/15/prog-interrupt/">
+<meta name="twitter:title" content="【基本情報】プログラム割込みについて - 新米エンジニアの備忘録">
+<meta name="twitter:description" content="試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。">
+<meta name="twitter:image" content="https://nykttocggv.github.io/images/202305/prog-interrupt_thumb.jpg">
 
 
 <script type="application/ld+json">
@@ -47,15 +47,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/nykttocggv.github.io\/"
     },
-    "headline": "【基本情報】AIについて-新米エンジニアの備忘録",
+    "headline": "【基本情報】プログラム割込みについて-新米エンジニアの備忘録",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/nykttocggv.github.io\/images\/202305\/aboutAi_thumb.jpg",
+      "url": "https:\/\/nykttocggv.github.io\/images\/202305\/prog-interrupt_thumb.jpg",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2023-05-11T21:31:15JST",
-    "dateModified": "2023-05-11T21:31:15JST",
+    "datePublished": "2023-05-15T15:44:17JST",
+    "dateModified": "2023-05-15T15:44:17JST",
     "author": {
       "@type": "Person",
       "name": "新米エンジニアの備忘録"
@@ -70,13 +70,13 @@
         "height": 60
       }
     },
-    "description": "ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこのAIとは何なのでしょうか。"
+    "description": "試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。今回はその「プログラム割込み」について解説していきたいと思います。"
   }
 </script>
 
 
 
-    <link rel="canonical" href="https://nykttocggv.github.io/post/2023/05/11/about-ai/">
+    <link rel="canonical" href="https://nykttocggv.github.io/post/2023/05/15/prog-interrupt/">
 
     
     <link href="https://fonts.googleapis.com/css?family=Lobster%7cLato:400,700" rel="stylesheet">
@@ -695,13 +695,13 @@ section.footer {
           
 <article class="sn">
 
-  <div class="thumb thumb-5551cb0046c726fccba2651b6586cf42"></div>
+  <div class="thumb thumb-16b6b80c83f5f1e8bba39526012fc720"></div>
 
   <header class="article-header">
-    <h1 class="title">【基本情報】AIについて</h1>
+    <h1 class="title">【基本情報】プログラム割込みについて</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-11T21:31:15JST">2023-05-11</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-15T15:44:17JST">2023-05-15</time></li>
       
       
       <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://nykttocggv.github.io/post/">POST</a></li>
@@ -711,87 +711,97 @@ section.footer {
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
 
   
 
-  <div class="article-body"><p>ここ数年ずっと話題にあがりっぱなしの「人工知能」。Artificial Intelligenceの頭文字を取ってAIと呼ばれますが、そもそもこのAIとは何なのでしょうか。</p>
-<p>基本情報でも出題例がありましたので、少しまとめておきます。</p>
-<h2 id="昔のaiは少しシンプル">昔のAIは少しシンプル</h2>
-<h3 id="構成">構成</h3>
-<p>まず、現在のAIと以前のAIとでは少し構成が異なります。以前のAIは</p>
+  <div class="article-body"><p>試験で出題頻度が著しく高い「プログラム割込み」についての問題。頻出だからこそ受験前からカバーしておきたい範囲ですよね。</p>
+<p>今回はその「プログラム割込み」について解説していきたいと思います。</p>
+<p>僕も現在基本情報技術者試験の勉強中で、この分野にはかなり頭を悩まされたので、共有します。</p>
+<p>これを見れば、</p>
 <ul>
-<li>知識ベース
+<li>プログラム割込みが何なのかを知る</li>
+<li>外部割込みと内部割込みの分類の仕方を覚える</li>
+</ul>
+<p>これらができるようになります。最後までぜひみていってください。</p>
+<h2 id="プログラム割込みとは">プログラム割込みとは</h2>
+<p>そもそもプログラム割込みというのは、</p>
+<p><strong>あるプログラムを実行中に別のプログラムに切り替えること</strong></p>
+<p>です。（かなり大雑把ですが）</p>
+<p>詳しくは以下の図と一緒に説明していきます。</p>
+<p><img src="/images/202305/prog-interrupt_1.png" alt="プログラム割込みの手順"></p>
+<p>あるプログラムを実行中、何かしらの原因で割込みが発生します。</p>
+<p>その際に実行していたプログラムは中断され、中断した時の状態が主記憶に保存されます。</p>
+<p>その後、割込みの種類を判別してから処理ルーチンを起動し、処理をします。</p>
+<p>処理が完了したら先ほど実行していたプログラムを再び呼び出し、処理が再開されます。</p>
+<p>複数のプログラムが同時に実行されるような<strong>多重プログラミング</strong> では、欠かせない重要な機能となっています。</p>
+<h2 id="プログラム割込みには2種類ある">プログラム割込みには「2種類」ある</h2>
+<p>プログラム割込みには</p>
 <ul>
-<li>専門知識やデータを蓄積</li>
+<li>内部割込み</li>
+<li>外部割込み</li>
+</ul>
+<p>の2種類あります。それぞれ説明していきます。</p>
+<h3 id="1-内部割込み">1. 内部割込み</h3>
+<p>内部割込みは、<strong>実行中のプログラムに起因</strong> する割込みです。</p>
+<p>具体例としては以下のようになっています。</p>
+<ul>
+<li>プログラム割込み
+<ul>
+<li>オーバーフロー・アンダーフロー</li>
+<li>ゼロ除算</li>
+<li>パリティエラー</li>
 </ul>
 </li>
-<li>エキスパートシステム
+<li>SVC(スーパーバイザーコール)割込み
 <ul>
-<li>知識ベースをもとに推論をおこなう</li>
+<li>処理プログラムから監視プログラムに対して<strong>入出力要求やプログラムの完了</strong> を伝えるとき</li>
 </ul>
 </li>
 </ul>
-<p>といった形です。後述する機械学習やディープラーニングは行いません。</p>
-<p>知識ベースも「もし〇〇ならば△△である」といった形の情報がたくさん入っています。</p>
-<p>そんなAIですが、これが第2次AIブームに火をつけました。</p>
-<h3 id="エキスパートシステムの実用例">エキスパートシステムの実用例</h3>
-<p><img src="/images/202305/aboutAi_1.jpg" alt="Amazonロゴ"></p>
-<p>エキスパートシステムの実用例は私達の身の回りにあります。例えば、<strong>Amazonや楽天市場のレコメンド機能</strong>はエキスパートシステムを使った機能です。</p>
-<p>学習、というよりは、法則にしたがっておすすめする商品を決めているということですね。</p>
-<p>後述するディープラーニングとはまた異なるものです。</p>
-<p>参考元: <a href="https://udemy.benesse.co.jp/data-science/ai/expert-system.html/amp" target="_blank">Udemy</a></p>
-<h2 id="現在のai">現在のAI</h2>
-<p>さて、現在主流となっているAIについてご説明していきます。</p>
-<h3 id="機会学習">機会学習</h3>
-<p>まずひとつに<strong>機械学習</strong>があります。<br>
-これは、人間が与えたデータから<em>特徴的な法則</em>をみつけだし、それをもとに未知のデータについて推論していく学習です。</p>
-<p>未知のデータへの対応能力については「汎化性能」がパラメータとなります。</p>
-<p>さきほどの構成と比べ、「学習」という言葉が出てきました。</p>
-<p>また、その学習の方向性は人間が与えなければなりません。手法が3つあります。</p>
-<ol>
-<li>教師あり学習
+<p>どれも、ユーザ側からコンピュータに何かアクションすることなく、<strong>プログラム自体が自分で割込みを発生している状態</strong> です。</p>
+<p>この言葉がわからなくても大丈夫です。次に説明する「内部割込み」を理解できると、違いがよくわかります。</p>
+<h3 id="2-外部割込み">2. 外部割込み</h3>
+<p>外部割り込みは、<strong>コンピュータシステム外から</strong>の割込みを指します。</p>
+<p>具体的には、以下のようになっています。</p>
 <ul>
-<li>入力に対して<strong>正解</strong>をデータとして与えることで、未知のデータに対して推論や判断に結びつける。</li>
+<li>入出力割込み &hellip; ユーザ側からデータの入力が完了した時や状態が変化した時</li>
+<li>機械チェック割込み &hellip; CPUの誤動作や装置の異常など</li>
+<li>タイマ割込み &hellip; CPUの使用時間がオーバーした時</li>
+<li>コンソール割込み &hellip; オペレータからの介入(コマンドライン上におけるCtrl+Cなど)</li>
 </ul>
-</li>
-<li>教師なし学習
-<ul>
-<li>正解を与えない。</li>
-<li>値の出現頻度を分析する、または規則性によるグルーピングをして解答を導出する。</li>
-</ul>
-</li>
-<li>強化学習
-<ul>
-<li>良い方向に進んだ行動に対して<strong>得点</strong>として与えることで、最適な解を試行させる。</li>
-</ul>
-</li>
-</ol>
-<h3 id="ディープラーニング">ディープラーニング</h3>
-<p>ディープラーニングとは、<strong>人間の脳内を模したニューラルネットワーク</strong>といつモデルを用いて、コンピュータが自律的に学習を進める方法です。</p>
-<p>この方法においては、人間が方向性を与えずとも、様々なデータを与えれば、それをもとに学習します。</p>
-<p>ただし、注意として過程や結果が意図しない方向に進む場合もあります。</p>
-<h2 id="まとめ">まとめ</h2>
-<p>これまでAIについて様々な特徴を述べてきました。昨今話題のChatGPTもまさにAIを用いたチャットボットです。</p>
-<p>有効活用できるように我々人間が努力や工夫をしなければなりませんね。</p>
+<h3 id="分類の仕方">分類の仕方</h3>
+<p>ここまで割り込みごとの説明をしていきましたが、明確な分け方があります。</p>
+<p>それは、<strong>プログラムが実行していても該当するかどうか</strong> です。(わかりづらいですよね)</p>
+<p>というのは、例えば、</p>
+<blockquote>
+<p>内部割込みは、実行プログラムが引き起こす特有の割込み</p>
+<p>それに対して外部割込みは、どのプログラムにでも起こりうる、共通の割込み</p>
+</blockquote>
+<p>といえます。</p>
+<p>外部割込みは「コンピュータシステム外からの割込み」なので、プログラムがどうであれ起こりうる割込みです。</p>
+<p>外部割込みから考えるとわかりやすいかもしれませんね。</p>
+<h2 id="プログラム割込みを制する者は基本情報を制する">プログラム割込みを制する者は基本情報を制する。</h2>
+<p>というのは流石に言い過ぎかもしれませんがそれくらい重要です。</p>
+<p>反復学習必須ですね。</p>
 <p>以上！</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91AI%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f11%2fabout-ai%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&text=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&t=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f&title=%e3%80%90%e5%9f%ba%e6%9c%ac%e6%83%85%e5%a0%b1%e3%80%91%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e5%89%b2%e8%be%bc%e3%81%bf%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f15%2fprog-interrupt%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -806,7 +816,7 @@ section.footer {
       </header>
       <ul class="terms">
         
-        <li><a href="https://nykttocggv.github.io//tags/fe/">FE</a></li>
+        <li><a href="https://nykttocggv.github.io//tags/fe/">fe</a></li>
         
       </ul>
     </section>
@@ -821,40 +831,19 @@ section.footer {
   <div class="mcol c6">
     <header>Next Article</header>
     
-    <article class="lism">
-  <a href="https://nykttocggv.github.io/post/2023/05/12/about-ram/">
-    <div class="thumb thumb-d3b97a3a376eb863b3f5356cb5879c6c"></div>
-
-    <div class="inner">
-      <div class="title">【基本情報】RAMの種類ってたくさんある。</div>
-
-      <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="12007-05-12T22:25:09JST">2023-05-12</time></li>
-        
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-        
-        
-      </ul>
-
-    </div>
-  </a>
-</article>
-
-    
   </div>
   <div class="mcol c6">
     <header>Previous Article</header>
     
     <article class="lism">
-  <a href="https://nykttocggv.github.io/post/2023/05/10/bnf/">
-    <div class="thumb thumb-876781386cf3e746748e42ecaf8ac32d"></div>
+  <a href="https://nykttocggv.github.io/post/2023/05/14/about-css/">
+    <div class="thumb thumb-cd6926f43cb9a2f9e1f541018d7b6ed7"></div>
 
     <div class="inner">
-      <div class="title">【基本情報】形式言語について</div>
+      <div class="title">【基本情報】クライアントサーバシステムとは</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="10007-05-10T22:03:26JST">2023-05-10</time></li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="14007-05-14T23:46:47JST">2023-05-14</time></li>
         
         <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
