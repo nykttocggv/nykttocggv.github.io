@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>初めてのHugo &#43; Github Pages - 新米エンジニアの備忘録</title>
+    <title>【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録</title>
     <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com"  crossorigin>
@@ -17,27 +17,27 @@
 <link rel="apple-touch-icon" href="https://nykttocggv.github.io/images/logo.png">
 
 
-<link rel="canonical" type="text/html" href="https://nykttocggv.github.io/post/2023/05/08/my-first-hugo/" title="新米エンジニアの備忘録">
+<link rel="canonical" type="text/html" href="https://nykttocggv.github.io/post/2023/05/16/java-servlet-1/" title="新米エンジニアの備忘録">
 
 
 
     
-<meta name="description" content="アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと思い、無料でブログサービスを利用できるものを探していた。">
+<meta name="description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
 
-<meta property="og:title" content="初めてのHugo &#43; Github Pages - 新米エンジニアの備忘録">
+<meta property="og:title" content="【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://nykttocggv.github.io/amp/post/2023/05/08/my-first-hugo/">
-<meta property="og:image" content="https://nykttocggv.github.io/images/202305/my-first-hugo.png">
+<meta property="og:url" content="https://nykttocggv.github.io/amp/post/2023/05/16/java-servlet-1/">
+<meta property="og:image" content="https://nykttocggv.github.io/images/default.png">
 <meta property="og:site_name" content="新米エンジニアの備忘録">
-<meta property="og:description" content="アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと思い、無料でブログサービスを利用できるものを探していた。">
+<meta property="og:description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="新米エンジニアの備忘録">
-<meta name="twitter:url" content="https://nykttocggv.github.io/amp/post/2023/05/08/my-first-hugo/">
-<meta name="twitter:title" content="初めてのHugo &#43; Github Pages - 新米エンジニアの備忘録">
-<meta name="twitter:description" content="アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと思い、無料でブログサービスを利用できるものを探していた。">
-<meta name="twitter:image" content="https://nykttocggv.github.io/images/202305/my-first-hugo.png">
+<meta name="twitter:url" content="https://nykttocggv.github.io/amp/post/2023/05/16/java-servlet-1/">
+<meta name="twitter:title" content="【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録">
+<meta name="twitter:description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
+<meta name="twitter:image" content="https://nykttocggv.github.io/images/default.png">
 
 
 <script type="application/ld+json">
@@ -48,15 +48,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/nykttocggv.github.io\/"
     },
-    "headline": "初めてのHugo + Github Pages-新米エンジニアの備忘録",
+    "headline": "【Java】Servletの「基本」の「き」の「k」-新米エンジニアの備忘録",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/nykttocggv.github.io\/images\/202305\/my-first-hugo.png",
+      "url": "https:\/\/nykttocggv.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2023-05-08T22:02:16JST",
-    "dateModified": "2023-05-08T22:02:16JST",
+    "datePublished": "2023-05-16T14:37:56JST",
+    "dateModified": "2023-05-16T14:37:56JST",
     "author": {
       "@type": "Person",
       "name": "新米エンジニアの備忘録"
@@ -71,7 +71,7 @@
         "height": 60
       }
     },
-    "description": "アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと思い、無料でブログサービスを利用できるものを探していた。"
+    "description": "Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。"
   }
 </script>
 
@@ -669,13 +669,13 @@ section.footer {
         
 <article class="sn">
 
-  <div class="thumb thumb-128a780bbea427b5bdd5c52876144c75"></div>
+  <div class="thumb thumb-c06a92bff95a9c50f0702badf613abb2"></div>
 
   <header class="article-header">
-    <h1 class="title">初めてのHugo &#43; Github Pages</h1>
+    <h1 class="title">【Java】Servletの「基本」の「き」の「k」</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-08T22:02:16JST">2023-05-08</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-16T14:37:56JST">2023-05-16</time></li>
       
       
       <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://nykttocggv.github.io/post/">POST</a></li>
@@ -685,11 +685,11 @@ section.footer {
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&text=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&t=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&text=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&t=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
@@ -698,78 +698,135 @@ section.footer {
   <div class="toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#ここまで来るのに2日かかったんですけど">ここまで来るのに2日かかったんですけど。</a></li>
-    <li><a href="#hexoまじでわからん">Hexo、まじでわからん。</a></li>
-    <li><a href="#hugoを選んだ理由">Hugoを選んだ理由</a></li>
-    <li><a href="#gitを学んでないから物凄く苦労した">Gitを学んでないから物凄く苦労した。</a></li>
-    <li><a href="#これからのこと">これからのこと</a></li>
+    <li><a href="#servletとは">Servletとは</a></li>
+    <li><a href="#servletの実行の流れ">Servletの実行の流れ</a></li>
+    <li><a href="#servletを使うと出来ること">Servletを使うと出来ること</a></li>
+    <li><a href="#使用したソフトウェア及び開発環境">使用したソフトウェア及び開発環境</a>
+      <ul>
+        <li><a href="#homebrewを用いてインストールmacos-linux">①Homebrewを用いてインストール(macOS, Linux)</a></li>
+        <li><a href="#pleiadesを使って日本語化されたeclipseをダウンロード">②Pleiadesを使って日本語化されたEclipseをダウンロード</a></li>
+      </ul>
+    </li>
+    <li><a href="#eclipseで動的プロジェクトの構築">Eclipseで動的プロジェクトの構築</a></li>
   </ul>
 </nav>
   </div>
   
 
-  <div class="article-body"><h2 id="ここまで来るのに2日かかったんですけど">ここまで来るのに2日かかったんですけど。</h2>
-<p>アウトプットの場を増やしたい、どうせアウトプットするならブログでインターネット上に情報を提供したいと思い、無料でブログサービスを利用できるものを探していた。</p>
-<p>まあ今までブログを運営していた経験はあったんだけれど、WordPressはメンテナンス性が悪くなかなか更新する頻度が上がらず、なんだかなあと。</p>
-<p>そこで「静的サイトジェネレータ」なるものを目にし、これで試してみよう&hellip;と始めたのが<strong>Hexo</strong>。</p>
-<p>さて、どうなるのでしょうか。</p>
-<h2 id="hexoまじでわからん">Hexo、まじでわからん。</h2>
-<p>そんなこんなで使い始めたHexoは、Node.jsで構成されているジェネレータ。npmでプラグイン管理するタイプです。</p>
-<p>それで色々奮闘しながらもプラグインを導入していたわけですが&hellip;</p>
-<p><strong>マジで日本語ドキュメントがない＆日本人による解説記事が少ない。</strong></p>
-<p>正直導入する前から気づいてはいたのですが、さすがにやりづらいなあと感じ、辞めることに。
-その挙句なぜか使用しているMacbookでHomebrewのコマンドが効かなくなり、MacBook初期化へ。</p>
-<p>マジで時間を無駄にしたと思いましたね。結局調べるとPATH周りがごちゃごちゃになってたっぽい。確かにhomebrewだけで３個くらいあった&hellip;。</p>
-<p>そのあと初期化を終え、導入したのがHugoでした。</p>
-<h2 id="hugoを選んだ理由">Hugoを選んだ理由</h2>
-<p>さて、Hugoを選んだ理由ですが、大きく２つあります。</p>
+  <div class="article-body"><p>Javaで開発したWebアプリケーションで欠かせない&quot;Servlet&quot;。</p>
+<p>最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。</p>
+<h2 id="servletとは">Servletとは</h2>
+<p>Servletとは、サーバサイドでJavaプログラムから動的なWebページを生成するための仕組みです。</p>
+<p>Javaアプリケーションの場合、実行はJVMによってなされますが、Servletの場合はWebコンテナと呼ばれるものによって実行されます。</p>
+<h2 id="servletの実行の流れ">Servletの実行の流れ</h2>
+<p>Servletが実行される時、以下の図のような流れで実行されます。</p>
+<p><img src="/images/202305/java-servlet-1_1.png" alt="Servlet実行の流れ"></p>
 <ol>
-<li>Gitで一括管理できること</li>
-<li>簡素な構成であること</li>
-<li>日本人による情報がネット上にあること</li>
+<li>クライアント(Webブラウザユーザー)がURLにアクセスすると、WebサーバにHTTPリクエストが送信される</li>
+<li>Webサーバでrequestを解析する</li>
+<li>Webコンテナにrequest情報が渡る</li>
+<li>request情報を元にServletが実行</li>
+<li>Webサーバにresponseとしてデータが返される</li>
+<li>WebサーバからクライアントへHTTPレスポンスが送信され、ユーザはWebページを閲覧できる</li>
 </ol>
-<p>１つ目についてですが、私はGitHub Pagesでサイトを公開したかったので、Gitが使えることが条件の１つでした。GitHub Pagesで公開したかった理由が、<strong>無料だから</strong>です。もうこれしかない。年がら年中金欠なんでね。</p>
-<p>2つ目については、Hexoで大失敗をしているので、Node.jsなんか使わずにGitでcloneしたりsubmoduleできたりする方がいいなと感じていたためです。Node.jsを悪いと言っているわけではなく、単に私の知識不足だったんですけど。勉強しろって話なんですけど。（小声）</p>
-<p>3つ目については、これもHexoで大失敗している部分ですね。情報がとにかく無い。情報が無いっていかにしんどいかを実感しました。なので情報が豊富に発信されているHugoを採用しました。</p>
-<p>で、実際導入作業はどうだったか、ですよね。</p>
-<h2 id="gitを学んでないから物凄く苦労した">Gitを学んでないから物凄く苦労した。</h2>
-<p>恥ずかしながら、GitHubに登録してから使ったことないしなんならGitすら何も知らなかったんですね。</p>
-<p>commitとは？pushとは？という状態。</p>
-<p>マジで何も知りません。</p>
-<p>さっき（この記事を書いている3時間くらい前）にやっと言葉の意味を理解しましたからね。
-そりゃ苦労もします。</p>
-<p>そんなこんなでGitから学習して。あーそういうことかと。</p>
-<p>主に苦労した点は以下です。</p>
-<ul>
-<li>ローカルリポジトリとリモートリポジトリの違い</li>
-<li>ローカル→リモートへのpushの仕方</li>
-<li>公開鍵と秘密鍵の設定(SSH)</li>
-<li>というかGitの仕組み</li>
-</ul>
-<p>いろんなサイトを参考にしました。本当にありがとうございました、と皆さんにお伝えしたいくらい。</p>
-<p>参考にさせていただいたサイトを紹介させていただきます。</p>
-<ul>
-<li><a href="https://wiki.browniealice.net/technote/hugo/setting_for_robust/" target="_blank">Alice in the Machine - wiki</a></li>
-<li><a href="https://open-groove.net/other-tools/hugo-github-pages-blog/" target="_blank">HugoとGitHub Pagesでブログを公開する - OpenGroove</a></li>
-<li><a href="https://qiita.com/shizuma/items/2b2f873a0034839e47ce" target="_blank">GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~ - Qiita</a></li>
-</ul>
-<p>本当にありがとうございました。助かりました。</p>
-<h2 id="これからのこと">これからのこと</h2>
-<p>これからこのブログでは、システムエンジニアの卵が自分の知見をここぞとばかりに公開する場として利用する予定です。</p>
-<p>初めは「基本情報技術者試験」「Java」「Hugoを用いたブログ運営」について綴っていこうかな。</p>
-<p>頑張っていきます。</p>
-<p>ぜひみていってくださいね。</p>
+<p>というながれになります。</p>
+<h2 id="servletを使うと出来ること">Servletを使うと出来ること</h2>
+<p>Servletを利用することによるメリットは、<strong>Web上でユーザが入力したデータを反映できる</strong> という点です。</p>
+<p>例えば、コメント機能をページ上に実装することもできます。</p>
+<ol>
+<li>ユーザがformに入力する</li>
+<li>入力したデータがrequestと一緒にServletへ渡される</li>
+<li>JDBC経由でデータベースにコメント情報が格納される</li>
+<li>Servletでデータ処理をしてHTML要素へレンダリングする</li>
+<li>Webページ上で投稿コメントが反映される</li>
+</ol>
+<p>という流れになるのかな？</p>
+<p>つまり、<strong>Webページの内容を状況に合わせて変えられる(動的であるということ)</strong> 点がServletのメリットです。</p>
+<h2 id="使用したソフトウェア及び開発環境">使用したソフトウェア及び開発環境</h2>
+<p>今回利用する開発環境は以下の通りです。</p>
+<table>
+<thead>
+<tr>
+<th>IDE(統合開発環境)</th>
+<th>Webサーバ及びコンテナ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eclipse(2022-12)</td>
+<td>Tomcat 9 (Java 17)</td>
+</tr>
+</tbody>
+</table>
+<p>Tomcatに関しては、Eclipseにバンドルされているので、個別にダウンロードする必要はありません。便利。</p>
+<p>Eclipseのダウンロード方法は主に2種類。</p>
+<h3 id="homebrewを用いてインストールmacos-linux">①Homebrewを用いてインストール(macOS, Linux)</h3>
+<p>macOSを例に説明していきますが、Homebrewが導入されている場合</p>
+<pre tabindex="0"><code>brew install --cask eclipse-java
+</code></pre><p>と入力するとインストール開始。</p>
+<p>LaunchpadにEclipseが追加されているのが確認できます。</p>
+<p><img src="/images/202305/java-servlet-1_2.jpg" alt="Eclipseインストール後"></p>
+<p>ですが、この場合だと一から自分で色々導入する必要があります。（僕はこっちで火の目を浴びました）</p>
+<p>こだわりがある人はこちらの方が良いですが、手っ取り早くインストールしたければ次の方法へ！</p>
+<h3 id="pleiadesを使って日本語化されたeclipseをダウンロード">②Pleiadesを使って日本語化されたEclipseをダウンロード</h3>
+<iframe class="hatenablogcard" style="width:100%;height:150px; max-width:600px;" src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fmergedoc.osdn.jp%2f" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+<p>上記のサイトからEclipseの日本語化がされているバージョンをダウンロードできます。</p>
+<p>いや、セットアップ高速で終わって草　コンビニ行けたやん&hellip;</p>
+<h2 id="eclipseで動的プロジェクトの構築">Eclipseで動的プロジェクトの構築</h2>
+<p>ここからは、実際にServletを動かしてみます。</p>
+<p>Eclipseを開き、<code>command + N</code>で「動的Webプロジェクト」を新規作成。</p>
+<p><img src="/images/202305/java-servlet-1_4.png" alt="動的プロジェクトを選択"></p>
+<p>今回はtestappという名前で作ります。</p>
+<p>プロジェクトエクスプローラをみるとtestappの文字が。</p>
+<p><img src="/images/202305/java-servlet-1_7.png" alt="プロジェクトエクスプローラにおける表示"></p>
+<p>次は、そこをアクティブにしてから、再び<code>command + N</code>で「サーブレット」を選択。</p>
+<p><img src="/images/202305/java-servlet-1_5.png" alt="サーブレットの情報を記述"></p>
+<p>今回はパッケージ名を「helloServlet」、クラス名を「HelloServ」にしましょう。</p>
+<p>完了を押して新しいサーブレットが開きます。</p>
+<p>そこにこちらを記述します。</p>
+<pre tabindex="0"><code>package helloServlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class HelloServlet
+ */
+@WebServlet(&#34;/HelloServlet&#34;)
+public class HelloServlet extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType(&#34;text/html;charset=UTF-8&#34;);
+		PrintWriter pw = response.getWriter();
+		
+		pw.println(&#34;&lt;html&gt;&#34;);
+		pw.println(&#34;&lt;body&gt;&#34;);
+		pw.println(&#34;&lt;h1&gt;Hello, Servlet!&lt;/h1&gt;&#34;);
+		pw.println(&#34;&lt;/body&gt;&#34;);
+		pw.println(&#34;&lt;/html&gt;&#34;);		
+	}
+
+}
+</code></pre><p>これで、ソースコードを右クリック→実行→Tomcat 9を選択。</p>
+<p><img src="/images/202305/java-servlet-1_6.png" alt="結果"></p>
+<p>見事、JavaプログラムからHTMLへレンダリングができました。</p>
 <p>以上！</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&text=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&t=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeHugo%20%2b%20Github%20Pages" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f08%2fmy-first-hugo%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&text=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&t=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2famp%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -784,7 +841,7 @@ section.footer {
       </header>
       <ul class="terms">
         
-        <li><a href="https://nykttocggv.github.io//tags/hugo/">hugo</a></li>
+        <li><a href="https://nykttocggv.github.io//tags/java/">Java</a></li>
         
       </ul>
     </section>
@@ -799,15 +856,19 @@ section.footer {
     <div class="mcol c6">
       <header>Next Article</header>
     
+    </div>
+    <div class="mcol c6">
+      <header>Previous Article</header>
+    
       <article class="lism">
-  <a href="https://nykttocggv.github.io/amp/post/2023/05/10/bnf/">
-    <div class="thumb thumb-876781386cf3e746748e42ecaf8ac32d"></div>
+  <a href="https://nykttocggv.github.io/amp/post/2023/05/15/blog-card/">
+    <div class="thumb thumb-9e8ecadba04952385509cf98fb132ebd"></div>
 
     <div class="inner">
-      <div class="title">【基本情報】形式言語について</div>
+      <div class="title">参考サイトをカード形式で表示したい。Hugoで。</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="10007-05-10T22:03:26JST">2023-05-10</time></li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="15007-05-15T23:20:41JST">2023-05-15</time></li>
         
         <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         
@@ -819,10 +880,6 @@ section.footer {
   </a>
 </article>
 
-    
-    </div>
-    <div class="mcol c6">
-      <header>Previous Article</header>
     
     </div>
 </div>
