@@ -15,6 +15,9 @@
 
 <link rel="stylesheet dns-prefetch preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<style>
+    
+</style>
 
 
 
@@ -573,6 +576,44 @@ section.footer {
   .toc {
     padding: 0 1rem; } }
 
+ul.facts, ul.facts_tags {
+  margin: 0;
+  padding: 0; }
+  ul.facts li, ul.facts_tags li {
+    display: inline;
+    font-size: .8rem; }
+  ul.facts i, ul.facts_tags i {
+    color: #cfd8dc;
+    margin-right: .5em; }
+  ul.facts.sm li, ul.facts_tags.sm li {
+    font-size: .7rem; }
+  ul.facts a, ul.facts_tags a {
+    position: relative;
+    display: inline-block;
+    transition: .3s; }
+    ul.facts a:after, ul.facts_tags a:after {
+      position: absolute;
+      bottom: -0.05rem;
+      left: 50%;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: blue;
+      transition: .3s;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    ul.facts a:hover::after, ul.facts_tags a:hover::after {
+      width: 100%; }
+
+ul.facts > li {
+  margin-right: 1rem; }
+
+ul.facts_tags {
+  margin: 0.5rem 0rem 1.3rem 0rem;
+  line-height: 1.3rem; }
+  ul.facts_tags li {
+    margin-right: .2rem; }
+
 
 
   
@@ -745,9 +786,12 @@ section.footer {
 
     <ul class="facts">
       <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-08T22:02:16JST">2023-05-08</time></li>
-      
-      
-      <li><i class="fas fa-bookmark" aria-hidden="true"></i><a href="https://nykttocggv.github.io/post/">POST</a></li>
+      <li><i class="fa fa-refresh" aria-hidden="true"></i><time datetime="2023-05-08T22:02:16JST">2023-05-08</time></li>
+      <ul class="facts_tags">
+        
+        <li><i class="fas fa-tags" aria-hidden="true"></i><a href="https://nykttocggv.github.io/tags/hugo">hugo</a> </li>
+        
+      </ul>
       
       
       
