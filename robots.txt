@@ -1,4 +1,5 @@
 User-agent: *
+Allow: /ads.txt/
 Disallow: /categories/
 Disallow: /tags/
 Sitemap: https://nykttocggv.github.io/sitemap.xml
