@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録</title>
+    <title>プログラミング言語を学習する効率的な方法を考える。 - 新米エンジニアの備忘録</title>
     <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com"  crossorigin>
@@ -21,7 +21,7 @@
 
 
 
-<link rel="canonical" href="https://nykttocggv.github.io/post/2023/05/16/java-servlet-1/">
+<link rel="canonical" href="https://nykttocggv.github.io/post/2023/06/05/learning-prog/">
 
 
 
@@ -32,27 +32,27 @@
 <link rel="apple-touch-icon" href="https://nykttocggv.github.io/images/logo.png">
 
 
-<link rel="amphtml" type="text/html" href="https://nykttocggv.github.io/amp/post/2023/05/16/java-servlet-1/" title="新米エンジニアの備忘録">
+<link rel="amphtml" type="text/html" href="https://nykttocggv.github.io/amp/post/2023/06/05/learning-prog/" title="新米エンジニアの備忘録">
 
 
 
     
-<meta name="description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
+<meta name="description" content="現在、研修中ということでJavaを学習しているのですが、業務ではC#やC&#43;&#43;、Kotlinを使うことが多いそう。って、Javaやってる場合じゃないのでは！？！？！？と思ったので、より効率よく学習する方法を考えてみることにしました。">
 
-<meta property="og:title" content="【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録">
+<meta property="og:title" content="プログラミング言語を学習する効率的な方法を考える。 - 新米エンジニアの備忘録">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://nykttocggv.github.io/post/2023/05/16/java-servlet-1/">
-<meta property="og:image" content="https://nykttocggv.github.io/images/202305/java-servlet-1_6.png">
+<meta property="og:url" content="https://nykttocggv.github.io/post/2023/06/05/learning-prog/">
+<meta property="og:image" content="https://nykttocggv.github.io/images/202306/learning-prog_thumb.png">
 <meta property="og:site_name" content="新米エンジニアの備忘録">
-<meta property="og:description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
+<meta property="og:description" content="現在、研修中ということでJavaを学習しているのですが、業務ではC#やC&#43;&#43;、Kotlinを使うことが多いそう。って、Javaやってる場合じゃないのでは！？！？！？と思ったので、より効率よく学習する方法を考えてみることにしました。">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="新米エンジニアの備忘録">
-<meta name="twitter:url" content="https://nykttocggv.github.io/post/2023/05/16/java-servlet-1/">
-<meta name="twitter:title" content="【Java】Servletの「基本」の「き」の「k」 - 新米エンジニアの備忘録">
-<meta name="twitter:description" content="Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。">
-<meta name="twitter:image" content="https://nykttocggv.github.io/images/202305/java-servlet-1_6.png">
+<meta name="twitter:url" content="https://nykttocggv.github.io/post/2023/06/05/learning-prog/">
+<meta name="twitter:title" content="プログラミング言語を学習する効率的な方法を考える。 - 新米エンジニアの備忘録">
+<meta name="twitter:description" content="現在、研修中ということでJavaを学習しているのですが、業務ではC#やC&#43;&#43;、Kotlinを使うことが多いそう。って、Javaやってる場合じゃないのでは！？！？！？と思ったので、より効率よく学習する方法を考えてみることにしました。">
+<meta name="twitter:image" content="https://nykttocggv.github.io/images/202306/learning-prog_thumb.png">
 
 
 <script type="application/ld+json">
@@ -63,15 +63,15 @@
       "@type": "WebPage",
       "@id":"https:\/\/nykttocggv.github.io\/"
     },
-    "headline": "【Java】Servletの「基本」の「き」の「k」-新米エンジニアの備忘録",
+    "headline": "プログラミング言語を学習する効率的な方法を考える。-新米エンジニアの備忘録",
     "image": {
       "@type": "ImageObject",
-      "url": "https:\/\/nykttocggv.github.io\/images\/202305\/java-servlet-1_6.png",
+      "url": "https:\/\/nykttocggv.github.io\/images\/202306\/learning-prog_thumb.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2023-05-16T14:37:56JST",
-    "dateModified": "2023-05-16T14:37:56JST",
+    "datePublished": "2023-06-05T23:04:22JST",
+    "dateModified": "2023-06-05T23:04:22JST",
     "author": {
       "@type": "Person",
       "name": "新米エンジニアの備忘録"
@@ -86,13 +86,13 @@
         "height": 60
       }
     },
-    "description": "Javaで開発したWebアプリケーションで欠かせない「Servlet」。最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。"
+    "description": "現在、研修中ということでJavaを学習しているのですが、業務ではC#やC\u002b\u002b、Kotlinを使うことが多いそう。って、Javaやってる場合じゃないのでは！？！？！？と思ったので、より効率よく学習する方法を考えてみることにしました。"
   }
 </script>
 
 
 
-    <link rel="canonical" href="https://nykttocggv.github.io/post/2023/05/16/java-servlet-1/">
+    <link rel="canonical" href="https://nykttocggv.github.io/post/2023/06/05/learning-prog/">
 
     
     <link href="https://fonts.googleapis.com/css?family=Lobster%7cLato:400,700" rel="stylesheet">
@@ -791,17 +791,17 @@ ul.facts_tags {
           
 <article class="sn">
 
-  <div class="thumb thumb-c06a92bff95a9c50f0702badf613abb2"></div>
+  <div class="thumb thumb-ac5e75ebb5843cf8e7b2aee5441b591c"></div>
 
   <header class="article-header">
-    <h1 class="title">【Java】Servletの「基本」の「き」の「k」</h1>
+    <h1 class="title">プログラミング言語を学習する効率的な方法を考える。</h1>
 
     <ul class="facts">
-      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-05-16T14:37:56JST">2023-05-16</time></li>
-      <li><i class="fa fa-refresh" aria-hidden="true"></i><time datetime="2023-05-16T14:37:56JST">2023-05-16</time></li>
+      <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2023-06-05T23:04:22JST">2023-06-05</time></li>
+      <li><i class="fa fa-refresh" aria-hidden="true"></i><time datetime="2023-06-05T23:04:22JST">2023-06-05</time></li>
       <ul class="facts_tags">
         
-        <li><i class="fas fa-tags" aria-hidden="true"></i><a href="https://nykttocggv.github.io/tags/java">Java</a> </li>
+        <li><i class="fas fa-tags" aria-hidden="true"></i><a href="https://nykttocggv.github.io/tags/se">SE</a> </li>
         
       </ul>
       
@@ -810,11 +810,11 @@ ul.facts_tags {
     </ul>
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&text=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&t=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&title=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&text=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&t=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&title=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
   </header>
@@ -823,135 +823,135 @@ ul.facts_tags {
   <div class="toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#servletとは">Servletとは</a></li>
-    <li><a href="#servletの実行の流れ">Servletの実行の流れ</a></li>
-    <li><a href="#servletを使うと出来ること">Servletを使うと出来ること</a></li>
-    <li><a href="#使用したソフトウェア及び開発環境">使用したソフトウェア及び開発環境</a>
+    <li><a href="#学習方法を考えてみる">学習方法を考えてみる</a>
       <ul>
-        <li><a href="#homebrewを用いてインストールmacos-linux">①Homebrewを用いてインストール(macOS, Linux)</a></li>
-        <li><a href="#pleiadesを使って日本語化されたeclipseをダウンロード">②Pleiadesを使って日本語化されたEclipseをダウンロード</a></li>
+        <li><a href="#1参考書で学ぶ">1.参考書で学ぶ</a></li>
+        <li><a href="#学習サイトで学ぶ">学習サイトで学ぶ</a></li>
+        <li><a href="#公式ドキュメントを読んで学ぶ">公式ドキュメントを読んで学ぶ</a></li>
+        <li><a href="#プログラミングスクールを利用する">プログラミングスクールを利用する</a></li>
       </ul>
     </li>
-    <li><a href="#eclipseで動的プロジェクトの構築">Eclipseで動的プロジェクトの構築</a></li>
+    <li><a href="#まとめ">まとめ</a></li>
   </ul>
 </nav>
   </div>
   
 
-  <div class="article-body"><p>Javaで開発したWebアプリケーションで欠かせない&quot;Servlet&quot;。</p>
-<p>最近Servletの役割及びメソッドについて学習したので、備忘録として残しておきます。</p>
-<h2 id="servletとは">Servletとは</h2>
-<p>Servletとは、サーバサイドでJavaプログラムから動的なWebページを生成するための仕組みです。</p>
-<p>Javaアプリケーションの場合、実行はJVMによってなされますが、Servletの場合はWebコンテナと呼ばれるものによって実行されます。</p>
-<h2 id="servletの実行の流れ">Servletの実行の流れ</h2>
-<p>Servletが実行される時、以下の図のような流れで実行されます。</p>
-<p><img src="/images/202305/java-servlet-1_1.png" alt="Servlet実行の流れ"></p>
-<ol>
-<li>クライアント(Webブラウザユーザー)がURLにアクセスすると、WebサーバにHTTPリクエストが送信される</li>
-<li>Webサーバでrequestを解析する</li>
-<li>Webコンテナにrequest情報が渡る</li>
-<li>request情報を元にServletが実行</li>
-<li>Webサーバにresponseとしてデータが返される</li>
-<li>WebサーバからクライアントへHTTPレスポンスが送信され、ユーザはWebページを閲覧できる</li>
-</ol>
-<p>というながれになります。</p>
-<h2 id="servletを使うと出来ること">Servletを使うと出来ること</h2>
-<p>Servletを利用することによるメリットは、<strong>Web上でユーザが入力したデータを反映できる</strong> という点です。</p>
-<p>例えば、コメント機能をページ上に実装することもできます。</p>
-<ol>
-<li>ユーザがformに入力する</li>
-<li>入力したデータがrequestと一緒にServletへ渡される</li>
-<li>JDBC経由でデータベースにコメント情報が格納される</li>
-<li>Servletでデータ処理をしてHTML要素へレンダリングする</li>
-<li>Webページ上で投稿コメントが反映される</li>
-</ol>
-<p>という流れになるのかな？</p>
-<p>つまり、<strong>Webページの内容を状況に合わせて変えられる(動的であるということ)</strong> 点がServletのメリットです。</p>
-<h2 id="使用したソフトウェア及び開発環境">使用したソフトウェア及び開発環境</h2>
-<p>今回利用する開発環境は以下の通りです。</p>
+  <div class="article-body"><p>システムエンジニアの卵として３ヶ月目に突入しました、chuyaです。</p>
+<p>現在、研修中ということでJavaを学習しているのですが、業務ではC#やC++、Kotlinを使うことが多いそう。</p>
+<p style="font-size: 1.4em;">って、Javaやってる場合じゃないのでは！？！？！？</p>
+<p>と思ったので、より効率よく学習する方法を考えてみることにしました。</p>
+<p>同じ悩みで困っている方がもしいれば、この記事読みながら一緒に考えてみませんか。</p>
+<h2 id="学習方法を考えてみる">学習方法を考えてみる</h2>
+<p>何かを学ぼうと思ったときに、何があるんだろう&hellip;?と考えてみると、</p>
+<ul>
+<li>参考書で学ぶ</li>
+<li>学習サイトで学ぶ</li>
+<li>公式ドキュメントを読んで学ぶ</li>
+<li>プログラミングスクールに入学する</li>
+<li>etc&hellip;</li>
+</ul>
+<p>というふうに、思いつく限りはこんな感じですね。</p>
+<p>ちょっとそれぞれで考えてみます。</p>
+<h3 id="1参考書で学ぶ">1.参考書で学ぶ</h3>
+<p>参考書で学習するのが、コストもそれなりに抑えられて、かなり深いところまで学習できる効率的な方法ですよね。</p>
+<p>今まで、高校や大学でも、<strong>教科書がベースになっていることが多かったはず</strong> です。</p>
+<p>自分も、研修でJavaを使うときき、真っ先に取り組んだ方法がこれでした。</p>
+<p>僕が読んだ参考書は以下の通りです。</p>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=nykttocggv05-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4295007803&linkId=f877f3a7e65fba3456775dc6310483d6"></iframe>
+<p>これは「ゲームをテーマにJavaを学習する」というのがテーマとなっている本で、<strong>例題として出ているプログラムを模写コーディングするだけでゲームを作成</strong> しているかのように学習を進められます。</p>
+<p>著者によってはこのように学習者がわかりやすいように工夫が施された本となっていることが多いので、学習する際にはかなり有力となるのではないでしょうか。</p>
+<h3 id="学習サイトで学ぶ">学習サイトで学ぶ</h3>
+<p>例えばこちら。</p>
+<iframe class="hatenablogcard" style="width:100%;height:150px; max-width:600px;" src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fdotinstall.com%2f" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+<p><strong>ドットインストール</strong> は、1つの動画が3分前後になっており、尚且つとてもわかりやすく動画がまとめられているので、<strong>初心者が学習するにはもってこい</strong> なサービスです。</p>
+<p>すごくわかりやすいのですが、懸念点は<strong>月額料金が発生すること</strong> 。</p>
+<p>１ヶ月1,000円で短期間集中で学習する分にはかなり有力かもしれません。ただ、</p>
+<ul>
+<li>学習ペースが遅い人</li>
+<li>すでにある程度学習ができていて知識もある人</li>
+</ul>
+<p>には <em>向いていない</em> かもしれません。というのも、</p>
+<ul>
+<li>毎月1,000円払って4ヶ月学習するなら、1冊2,000円の参考書を2冊買って4ヶ月ゆっくり好きな時間に学習できる</li>
+<li>あくまで初心者向けのコンテンツで、物足りない場合が多い</li>
+</ul>
+<p>と言った理由があるためです。</p>
+<p>場合によって選択すべきですね。</p>
+<h3 id="公式ドキュメントを読んで学ぶ">公式ドキュメントを読んで学ぶ</h3>
+<p>ある程度学習が進んでいる人で、尚且つ<strong>英語が読める人</strong> には、かなりおすすめの方法です。</p>
+<p>公式ドキュメントとは、例えば、Javaを開発しているOracleから出ているJava Docsのことです。</p>
+<p>他にも</p>
 <table>
 <thead>
 <tr>
-<th>IDE(統合開発環境)</th>
-<th>Webサーバ及びコンテナ</th>
+<th>言語</th>
+<th>公式ドキュメント</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Eclipse(2022-12)</td>
-<td>Tomcat 9 (Java 17)</td>
+<td>C#</td>
+<td><a href="https://learn.microsoft.com/ja-jp/dotnet/csharp/" target="_blank">Microsoft</a></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><a href="https://www.python.org/doc/" target="_blank">python.org</a></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript" target="_blank">mdn web docs</a></td>
 </tr>
 </tbody>
 </table>
-<p>Tomcatに関しては、Eclipseにバンドルされているので、個別にダウンロードする必要はありません。便利。</p>
-<p>Eclipseのダウンロード方法は主に2種類。</p>
-<h3 id="homebrewを用いてインストールmacos-linux">①Homebrewを用いてインストール(macOS, Linux)</h3>
-<p>macOSを例に説明していきますが、Homebrewが導入されている場合</p>
-<pre tabindex="0"><code>brew install --cask eclipse-java
-</code></pre><p>と入力するとインストール開始。</p>
-<p>LaunchpadにEclipseが追加されているのが確認できます。</p>
-<p><img src="/images/202305/java-servlet-1_2.jpg" alt="Eclipseインストール後"></p>
-<p>ですが、この場合だと一から自分で色々導入する必要があります。（僕はこっちで火の目を浴びました）</p>
-<p>こだわりがある人はこちらの方が良いですが、手っ取り早くインストールしたければ次の方法へ！</p>
-<h3 id="pleiadesを使って日本語化されたeclipseをダウンロード">②Pleiadesを使って日本語化されたEclipseをダウンロード</h3>
-<iframe class="hatenablogcard" style="width:100%;height:150px; max-width:600px;" src="https://hatenablog-parts.com/embed?url=https%3a%2f%2fwillbrains.jp%2f" width="300" height="150" frameborder="0" scrolling="no"></iframe>
-<p>上記のサイトからEclipseの日本語化がされているバージョンをダウンロードできます。</p>
-<p>いや、セットアップ高速で終わって草　コンビニ行けたやん&hellip;</p>
-<h2 id="eclipseで動的プロジェクトの構築">Eclipseで動的プロジェクトの構築</h2>
-<p>ここからは、実際にServletを動かしてみます。</p>
-<p>Eclipseを開き、<code>command + N</code>で「動的Webプロジェクト」を新規作成。</p>
-<p><img src="/images/202305/java-servlet-1_4.png" alt="動的プロジェクトを選択"></p>
-<p>今回はtestappという名前で作ります。</p>
-<p>プロジェクトエクスプローラをみるとtestappの文字が。</p>
-<p><img src="/images/202305/java-servlet-1_7.png" alt="プロジェクトエクスプローラにおける表示"></p>
-<p>次は、そこをアクティブにしてから、再び<code>command + N</code>で「サーブレット」を選択。</p>
-<p><img src="/images/202305/java-servlet-1_5.png" alt="サーブレットの情報を記述"></p>
-<p>今回はパッケージ名を「helloServlet」、クラス名を「HelloServ」にしましょう。</p>
-<p>完了を押して新しいサーブレットが開きます。</p>
-<p>そこにこちらを記述します。</p>
-<pre tabindex="0"><code>package helloServlet;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-/**
- * Servlet implementation class HelloServlet
- */
-@WebServlet(&#34;/HelloServlet&#34;)
-public class HelloServlet extends HttpServlet {
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType(&#34;text/html;charset=UTF-8&#34;);
-		PrintWriter pw = response.getWriter();
-		
-		pw.println(&#34;&lt;html&gt;&#34;);
-		pw.println(&#34;&lt;body&gt;&#34;);
-		pw.println(&#34;&lt;h1&gt;Hello, Servlet!&lt;/h1&gt;&#34;);
-		pw.println(&#34;&lt;/body&gt;&#34;);
-		pw.println(&#34;&lt;/html&gt;&#34;);		
-	}
-
-}
-</code></pre><p>これで、ソースコードを右クリック→実行→Tomcat 9を選択。</p>
-<p><img src="/images/202305/java-servlet-1_6.png" alt="結果"></p>
-<p>見事、JavaプログラムからHTMLへレンダリングができました。</p>
+<p>などがあります。</p>
+<p>開発元が公式に出している文書なので、記述内容に誤りがあることが限りなく少ないです。</p>
+<p>詳しい仕様や、定義などを知りたい場合にはかなりいいですね。</p>
+<p>また、公式ドキュメントには<strong>チュートリアルが含まれている場合も多いです。</strong></p>
+<iframe class="hatenablogcard" style="width:100%;height:150px; max-width:600px;" src="https://hatenablog-parts.com/embed?url=https%3a%2f%2flearn.microsoft.com%2fja-jp%2fdotnet%2fcsharp%2ftutorials%2fexploration%2finterpolated-strings" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+<p>これは、Microsoftが出しているC#のチュートリアルです。日本語で書かれていますよね。</p>
+<p>ですが、大半は英語で記述されていることが多いので、<strong>DeepLなどを用いて翻訳しながら学習する</strong> ・ <strong>英語に自信がある</strong> と言った人は向いているかもしれません。</p>
+<p>情報の正確性は間違いないので、そこが気になる人にとっても最適な方法かな、と思います。</p>
+<h3 id="プログラミングスクールを利用する">プログラミングスクールを利用する</h3>
+<p>経済的な余裕があり、尚且つ確実に学習を進めたい時は<strong>プログラミングスクールを利用する</strong> のも最終手段としてありかもしれません。</p>
+<p>例えば、SAMURAI ENGINEERによる<strong>SAMURAI TERAKOYA</strong>。</p>
+<p><a href="//af.moshimo.com/af/c/click?a_id=4017091&p_id=3614&pc_id=8760&pl_id=67262&url=https%3A%2F%2Fterakoya.sejuku.net%2F%3Fcid%3Dmoshimo%26acid%3Dmoshimo%26utm_source%3Dmoshimo%26utm_medium%3Daffiliate%26utm_campaign%3Dnormal" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://image.moshimo.com/af-img/0665/000000067262.png" style="border:none;" alt=""></a><img src="//i.moshimo.com/af/i/impression?a_id=4017091&p_id=3614&pc_id=8760&pl_id=67262" width="1" height="1" style="border:none;" alt=""></p>
+<p>こういったプログラミングスクールの特徴としては、</p>
+<ul>
+<li>教材が豊富（SAMURAI TERAKOYAの場合、40種類以上あり）</li>
+<li>Q&amp;A掲示板があるので、わからないことはすぐに相談できる</li>
+<li>メンター制度の採用</li>
+</ul>
+<p>などがあります。</p>
+<p>SAMURAI TERAKOYAの場合、ドットインストールなどの動画配信サービスと違う点は、<strong>毎月1回無料の60分レッスンを受講できる</strong> という点ですね。</p>
+<p>Zoomを用いたオンラインレッスンを受けることができるので、普段システムエンジニアとして働いている人でも、わからない点を質問することができます。</p>
+<p>無料体験もあるようなので、自分もやってみようかなと思いました。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>この中でも実際一番効率よく学習できるのは、参考書を購入して学習する方法かなあと思いました。</p>
+<p>やっぱり本ってすごいです。</p>
+<ul>
+<li>肌身離さず持ち歩いていつでも学習できるようにすること</li>
+<li>ある程度まとまった時間を確保して学習に取り組むこと</li>
+</ul>
+<p>を意識すれば、ある程度学びを進めることができるのではないでしょうか。</p>
+<p>しかし、それでもなかなか勉強するのが難しい、という場合は、</p>
+<ul>
+<li>経済的な余裕がある → <strong>プログラミングスクールの無料体験をやってみる</strong></li>
+<li>軽く試してみたい → <strong>動画配信サービスを利用する</strong></li>
+</ul>
+<p>と言った方法もありかもしれません。</p>
+<p>ぜひ、自分に合った方法を探してみてくださいね。</p>
 <p>以上！</p>
 </div>
 
   <footer class="article-footer">
 
     <aside class="share">
-  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
-  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&text=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&t=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f&title=%e3%80%90Java%e3%80%91Servlet%e3%81%ae%e3%80%8c%e5%9f%ba%e6%9c%ac%e3%80%8d%e3%81%ae%e3%80%8c%e3%81%8d%e3%80%8d%e3%81%ae%e3%80%8ck%e3%80%8d" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
-  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f05%2f16%2fjava-servlet-1%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
+  <a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&title=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="はてなブックマーク" class="ht" target="_blank" rel="noopener nofollow">B!</a>
+  <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&text=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82&tw_p=tweetbutton" title="Twitterでシェア" class="tw" target="_blank" rel="noopener nofollow"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&t=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="Facebookでシェア" class="fb" target="_blank" rel="noopener nofollow"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+  <a href="https://getpocket.com/edit?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f&title=%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e8%a8%80%e8%aa%9e%e3%82%92%e5%ad%a6%e7%bf%92%e3%81%99%e3%82%8b%e5%8a%b9%e7%8e%87%e7%9a%84%e3%81%aa%e6%96%b9%e6%b3%95%e3%82%92%e8%80%83%e3%81%88%e3%82%8b%e3%80%82" title="Pocketに保存" class="pk" target="_blank" rel="noopener nofollow"><i class="fab fa-get-pocket" aria-hidden="true"></i></a>
+  <a href="https://social-plugins.line.me/lineit/share?url=https%3a%2f%2fnykttocggv.github.io%2fpost%2f2023%2f06%2f05%2flearning-prog%2f" title="LINEでシェア" class="ln" target="_blank" rel="noopener nofollow"><i class="fab fa-line" aria-hidden="true"></i></a>
 </aside>
 
 
@@ -966,7 +966,7 @@ public class HelloServlet extends HttpServlet {
       </header>
       <ul class="terms">
         
-        <li><a href="https://nykttocggv.github.io//tags/java/">Java</a></li>
+        <li><a href="https://nykttocggv.github.io//tags/se/">SE</a></li>
         
       </ul>
     </section>
@@ -981,40 +981,19 @@ public class HelloServlet extends HttpServlet {
   <div class="mcol c6">
     <header>Next Article</header>
     
-    <article class="lism">
-  <a href="https://nykttocggv.github.io/post/2023/05/24/training-story-1/">
-    <div class="thumb thumb-eab5ea21920461095bf9122b23fd9699"></div>
-
-    <div class="inner">
-      <div class="title">【SE】総合開発演習でまさかの苦戦。</div>
-
-      <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="24007-05-24T21:36:07JST">2023-05-24</time></li>
-        
-        <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
-        
-        
-        
-      </ul>
-
-    </div>
-  </a>
-</article>
-
-    
   </div>
   <div class="mcol c6">
     <header>Previous Article</header>
     
     <article class="lism">
-  <a href="https://nykttocggv.github.io/post/2023/05/15/blog-card/">
-    <div class="thumb thumb-9e8ecadba04952385509cf98fb132ebd"></div>
+  <a href="https://nykttocggv.github.io/post/2023/05/29/google-adsense-starts/">
+    <div class="thumb thumb-541e1686ab5cc877956cf092d7e5611f"></div>
 
     <div class="inner">
-      <div class="title">参考サイトをカード形式で表示したい。Hugoで。</div>
+      <div class="title">ブログ設立1ヶ月でGoogle Adsenseに合格した話。</div>
 
       <ul class="facts sm">
-        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="15007-05-15T23:20:41JST">2023-05-15</time></li>
+        <li><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="29007-05-29T23:08:07JST">2023-05-29</time></li>
         
         <li><i class="fas fa-bookmark" aria-hidden="true"></i>POST</li>
         

@@ -5,7 +5,16 @@
     <link>https://nykttocggv.github.io/tags/se/</link>
     <description>Recent content in SE on 新米エンジニアの備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 May 2023 21:36:07 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/se/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jun 2023 23:04:22 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/se/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>プログラミング言語を学習する効率的な方法を考える。</title>
+      <link>https://nykttocggv.github.io/post/2023/06/05/learning-prog/</link>
+      <pubDate>Mon, 05 Jun 2023 23:04:22 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/06/05/learning-prog/</guid>
+      <description>システムエンジニアの卵として３ヶ月目に突入しました、chuyaです。 現在、研修中ということでJavaを学習しているのですが、業務ではC#やC</description>
+    </item>
+    
     <item>
       <title>【SE】総合開発演習でまさかの苦戦。</title>
       <link>https://nykttocggv.github.io/post/2023/05/24/training-story-1/</link>
