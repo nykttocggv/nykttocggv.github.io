@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on 新米エンジニアの備忘録</title>
+    <link>https://nykttocggv.github.io/tags/programming/</link>
+    <description>Recent content in Programming on 新米エンジニアの備忘録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Aug 2023 21:40:24 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>プログラミング初心者が次にやるべき3つのこと【実践編】</title>
+      <link>https://nykttocggv.github.io/post/2023/08/13/prog-next-steps/</link>
+      <pubDate>Sun, 13 Aug 2023 21:40:24 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/08/13/prog-next-steps/</guid>
+      <description>こんにちは、chuyaです。 この記事では、 プログラミングを学習したけど、次に何をすればいいかわからない... という人に向けて、おすすめのアク</description>
+    </item>
+    
+  </channel>
+</rss>
