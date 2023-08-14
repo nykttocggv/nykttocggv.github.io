@@ -6,7 +6,16 @@
     <description>Recent content in fe on 新米エンジニアの備忘録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 May 2023 15:44:17 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/fe/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 21:42:06 +0900</lastBuildDate><atom:link href="https://nykttocggv.github.io/tags/fe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【基本情報】合格のコツを伝授します。</title>
+      <link>https://nykttocggv.github.io/post/2023/08/14/fe-summary/</link>
+      <pubDate>Mon, 14 Aug 2023 21:42:06 +0900</pubDate>
+      
+      <guid>https://nykttocggv.github.io/post/2023/08/14/fe-summary/</guid>
+      <description>こんにちは、chuyaです。 今回は、基本情報技術者試験に合格するためのコツをお伝えします。 基本情報技術者試験に合格するためには、効率的な勉強</description>
+    </item>
+    
     <item>
       <title>【基本情報】プログラム割込みについて</title>
       <link>https://nykttocggv.github.io/post/2023/05/15/prog-interrupt/</link>
